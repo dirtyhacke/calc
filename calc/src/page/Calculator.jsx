@@ -39,7 +39,6 @@ const Calculator = () => {
           <button className='btn' onClick={() => handleClick('*')}>×</button>
           <button className='btn' onClick={() => handleClick('/')}>÷</button>
 
-          {/* Utility buttons */}
           <button className='btn' onClick={handleClear}>C</button>
           <button className='btn' onClick={handleEqual}>=</button>
         </div>

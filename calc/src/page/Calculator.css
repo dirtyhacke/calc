@@ -94,7 +94,7 @@ body {
 
 @media (max-width: 400px) {
   .keys {
-    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row for tiny screens */
+    grid-template-columns: repeat(2, 1fr,1fr); /* 2 buttons per row for tiny screens */
   }
 
   .btn {
