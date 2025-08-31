@@ -1,0 +1,108 @@
+body {
+  background-color: #caf0f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  width: 90%;
+  max-width: 400px;  /* Prevents stretching too much on large screens */
+  height: auto;
+  border: solid 1px gray;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 buttons per row for better layout */
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn {
+  width: 100%;
+  height: 60px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition-duration: 0.3s;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.display {
+  margin-top: 10px;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.display .disp {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+  background-color: transparent;
+  outline: none;
+  font-size: 2rem;
+  padding: 10px;
+  font-weight: 700;
+  text-align: right;
+}
+
+/* ✅ Mobile Responsive Fixes */
+@media (max-width: 600px) {
+  .main {
+    width: 95%;
+    padding: 12px;
+  }
+
+  .keys {
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row on small screens */
+  }
+
+  .btn {
+    height: 55px;
+    font-size: 1.2rem;
+  }
+
+  .display .disp {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .keys {
+    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row for tiny screens */
+  }
+
+  .btn {
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .display .disp {
+    font-size: 1.2rem;
+  }
+}
