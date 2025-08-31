@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import './Style.css'
+import './Calculator.css'
 
-const Index = () => {
+const Calculator = () => {
   const [input, setInput] = useState("")
 
   function handleClick(val) {
@@ -48,4 +48,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default Calculator

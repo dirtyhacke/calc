@@ -1,10 +1,11 @@
 import React from 'react'
-import Index from './page/Index'
+import Calculator from './page/Calculator'
+
 
 const App = () => {
   return (
     <>
-     <Index/>
+     <Calculator/>
     </>
   )
 }
